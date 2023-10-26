@@ -32,7 +32,7 @@ def get_argparser():
     parser = argparse.ArgumentParser('Pytorch SegFormer Models training and evaluation script', add_help=False)
 
     # Datset Options
-    parser.add_argument("--data_root", type=str, default='/usr/local/Huangshuqi/ImageData/CityScapesDataset',help="path to Dataset")
+    parser.add_argument("--data_root", type=str, default='./CityScapesDataset',help="path to Dataset")
     parser.add_argument("--image_size", type=int, default=[512, 512], help="input size")
     parser.add_argument("--ignore_label", type=int, default=255, help="path to Dataset")
     parser.add_argument("--dataset", type=str, default='cityscapes',choices=['cityscapes'], help='Name of dataset')
