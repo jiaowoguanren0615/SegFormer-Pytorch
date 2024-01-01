@@ -1,11 +1,11 @@
 import torch
 import math
-from torch.optim.lr_scheduler import LRScheduler, LambdaLR
+from torch.optim.lr_scheduler import _LRScheduler, LambdaLR
 
 __all__ = ['PolyLR', 'WarmupPolyLR', 'WarmupCosineLR', 'WarmupExpLR', 'WarmupLR']
 
 
-class PolyLR(LRScheduler):
+class PolyLR(_LRScheduler):
     def __init__(self, optimizer, max_iter, decay_iter=1, power=0.9, last_epoch=-1) -> None:
         self.decay_iter = decay_iter
         self.max_iter = max_iter
@@ -20,7 +20,7 @@ class PolyLR(LRScheduler):
             return [factor * lr for lr in self.base_lrs]
 
 
-class WarmupLR(LRScheduler):
+class WarmupLR(_LRScheduler):
     def __init__(self, optimizer, warmup_iter=500, warmup_ratio=5e-4, warmup='exp', last_epoch=-1) -> None:
         self.warmup_iter = warmup_iter
         self.warmup_ratio = warmup_ratio
