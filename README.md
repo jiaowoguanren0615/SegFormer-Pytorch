@@ -3,7 +3,10 @@
 ## [SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers](https://arxiv.org/pdf/2105.15203.pdf)
 
 This is a warehouse for SegFormer-pytorch-model, can be used to train your image datasets for segmentation tasks.
-The code mainly comes from official [source code](https://github.com/NVlabs/SegFormer).
+The code mainly comes from official [source code](https://github.com/NVlabs/SegFormer).  
+
+
+### For segmentation tasks, please refer this [github warehouse](https://github.com/jiaowoguanren0615/Segmentation_Factory)  
 
 ## Project Structure
 ```
