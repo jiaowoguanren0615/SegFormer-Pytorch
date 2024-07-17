@@ -6,7 +6,7 @@ This is a warehouse for SegFormer-pytorch-model, can be used to train your image
 The code mainly comes from official [source code](https://github.com/NVlabs/SegFormer).  
 
 
-### For segmentation tasks, please refer this [github warehouse](https://github.com/jiaowoguanren0615/Segmentation_Factory)  
+### For ADE20K, COCO segmentation tasks, please refer this [github warehouse](https://github.com/jiaowoguanren0615/Segmentation_Factory)  
 
 ## Project Structure
 ```
